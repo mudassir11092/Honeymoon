@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <title>Itinerary</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    const password = "love2025";
+    const entered = sessionStorage.getItem("pwOK");
+    if (entered !== password) {
+      const tryPw = prompt("Enter password:");
+      if (tryPw !== password) {
+        alert("Wrong password!");
+        location.href = "https://google.com";
+      } else {
+        sessionStorage.setItem("pwOK", tryPw);
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="page">
