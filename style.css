@@ -1,27 +1,31 @@
+/* --- Global Styles --- */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('assets/bg1.jpg') no-repeat center center fixed;
+  background: url('bg1.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #333;
   position: relative;
   overflow-x: hidden;
 }
 
+/* --- Page Container --- */
 .page {
   max-width: 700px;
   margin: 60px auto;
   background: rgba(255, 255, 255, 0.88);
   padding: 20px 30px;
   border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
+/* --- Headings --- */
 h1, h2 {
   color: #e63946;
   font-family: 'Georgia', serif;
 }
 
+/* --- Navigation Links --- */
 nav a {
   display: inline-block;
   margin: 10px;
@@ -30,8 +34,14 @@ nav a {
   color: white;
   border-radius: 8px;
   text-decoration: none;
+  transition: background 0.3s ease;
 }
 
+nav a:hover {
+  background: #faa307;
+}
+
+/* --- Textareas --- */
 textarea {
   width: 100%;
   padding: 10px;
@@ -42,6 +52,7 @@ textarea {
   min-height: 120px;
 }
 
+/* --- Bucket List --- */
 .bucket-list {
   list-style: none;
   padding: 0;
@@ -63,6 +74,7 @@ textarea {
   accent-color: #ffb703;
 }
 
+/* --- File Upload Button --- */
 .file-upload {
   display: inline-block;
   padding: 12px 20px;
@@ -85,6 +97,7 @@ textarea {
   cursor: pointer;
 }
 
+/* --- Upload to Google Photos Button --- */
 .upload-drive {
   display: inline-block;
   margin: 10px 0;
@@ -99,7 +112,7 @@ textarea {
   background: #0b7285;
 }
 
-/* Motif on hover */
+/* --- Optional: M&F Motif Overlay --- */
 body::before {
   content: '';
   position: fixed;
@@ -108,7 +121,7 @@ body::before {
   width: 120px;
   height: 120px;
   transform: translate(-50%, -50%);
-  background: url('assets/motif-mf.png') no-repeat center;
+  background: url('motif-mf.png') no-repeat center;
   background-size: contain;
   opacity: 0;
   transition: opacity 0.3s ease;
