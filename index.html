@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome – MA & F</title>
+  <title>MA & F – Our Honeymoon</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Password Script -->
   <script>
-  const password = "love2025";
-  const entered = sessionStorage.getItem("pwOK");
-  if (entered !== password) {
-    const tryPw = prompt("Enter password:");
-    if (tryPw !== password) {
-      alert("Wrong password!");
-      location.href = "https://google.com"; // redirect if incorrect
-    } else {
-      sessionStorage.setItem("pwOK", tryPw);
+    const password = "love2025";
+    const entered = sessionStorage.getItem("pwOK");
+    if (entered !== password) {
+      const tryPw = prompt("Enter password:");
+      if (tryPw !== password) {
+        alert("Wrong password!");
+        location.href = "https://google.com";
+      } else {
+        sessionStorage.setItem("pwOK", tryPw);
+      }
     }
-  }
-</script>
+  </script>
 </head>
 <body>
   <div class="page">
-    <h1>Our Honeymoon 💕</h1>
-    <p>Welcome to our private journey, Mudassir Ali & Farhana Sayed.</p>
+    <h1>Welcome, Mudassir & Farhana 💕</h1>
+    <p style="text-align:center;">Explore our memories together</p>
     <nav>
       <a href="itinerary.html">Itinerary</a>
-      <a href="journal.html">Photo Journal</a>
+      <a href="journal.html">Journal</a>
       <a href="bucketlist.html">Bucket List</a>
       <a href="notes.html">Love Notes</a>
     </nav>
