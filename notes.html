@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <h2>Love Notes 💌</h2>
+    <textarea id="lovenote" placeholder="Write your sweetest note here..."></textarea>
+  </div>
+  <script>
+    const note = document.getElementById('lovenote');
+    note.value = localStorage.getItem('lovenote') || '';
+    note.addEventListener('input', () => {
+      localStorage.setItem('lovenote', note.value);
+    });
+  </script>
+</body>
+</html>
