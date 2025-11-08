@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bucket List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <h2>Bucket List 🏝️</h2>
+    <ul class="bucket-list">
+      <li><input type="checkbox" id="item1"><label for="item1">Sunset on Langkawi beach</label></li>
+      <li><input type="checkbox" id="item2"><label for="item2">Eat Nasi Kandar in Penang</label></li>
+      <li><input type="checkbox" id="item3"><label for="item3">Tea hike in Cameron Highlands</label></li>
+    </ul>
+  </div>
+  <script>
+    document.querySelectorAll('input[type=checkbox]').forEach(cb => {
+      const id = cb.id;
+      cb.checked = localStorage.getItem(id) === 'true';
+      cb.addEventListener('change', () => {
+        localStorage.setItem(id, cb.checked);
+      });
+    });
+  </script>
+</body>
+</html>
