@@ -27,12 +27,17 @@
     </nav>
     <textarea id="lovenote" placeholder="Write something sweet..."></textarea>
   </div>
-  <script>
-    const note = document.getElementById('lovenote');
-    note.value = localStorage.getItem('lovenote') || '';
-    note.addEventListener('input', () => {
-      localStorage.setItem('lovenote', note.value);
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const textarea = document.getElementById('itinerary'); // or 'lovenote'
+    const key = textarea.id;
+
+    textarea.value = localStorage.getItem(key) || '';
+
+    textarea.addEventListener('input', () => {
+      localStorage.setItem(key, textarea.value);
     });
-  </script>
+  });
+</script>
 </body>
 </html>
