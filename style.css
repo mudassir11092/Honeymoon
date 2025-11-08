@@ -1,4 +1,3 @@
-/* --- Global Styles --- */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -9,7 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-/* --- Page Container --- */
 .page {
   max-width: 700px;
   margin: 60px auto;
@@ -19,13 +17,11 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Headings --- */
 h1, h2 {
   color: #e63946;
   font-family: 'Georgia', serif;
 }
 
-/* --- Navigation Links --- */
 nav a {
   display: inline-block;
   margin: 10px;
@@ -41,7 +37,6 @@ nav a:hover {
   background: #faa307;
 }
 
-/* --- Textareas --- */
 textarea {
   width: 100%;
   padding: 10px;
@@ -52,7 +47,6 @@ textarea {
   min-height: 120px;
 }
 
-/* --- Bucket List --- */
 .bucket-list {
   list-style: none;
   padding: 0;
@@ -74,7 +68,6 @@ textarea {
   accent-color: #ffb703;
 }
 
-/* --- File Upload Button --- */
 .file-upload {
   display: inline-block;
   padding: 12px 20px;
@@ -97,7 +90,6 @@ textarea {
   cursor: pointer;
 }
 
-/* --- Upload to Google Photos Button --- */
 .upload-drive {
   display: inline-block;
   margin: 10px 0;
@@ -112,7 +104,6 @@ textarea {
   background: #0b7285;
 }
 
-/* --- Optional: M&F Motif Overlay --- */
 body::before {
   content: '';
   position: fixed;
